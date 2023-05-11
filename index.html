@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lanzamiento de dado</title>
+  <style>
+    #dado {
+      font-family: monospace;
+      font-size: 20px;
+      margin: 10px auto;
+      text-align: center;
+    }
+    .dado-img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="dado"></div>
+  <img src="" class="dado-img" alt="Dado" id="dado-img">
+  <button id="lanzar">Lanzar dado</button>
+  <button id="historial">Ver historial</button>
+  <ul id="resultados"></ul>
+  <script>
+     imagenesDado = [
+      "dado1.png",
+      "dado2.png",
+      "dado3.png",
+      "dado4.png",
+      "dado5.png",
+      "dado6.png",
+    ];
+    
+     dadoImg = document.getElementById('dado-img');
+    
+    function lanzarDado() {
+       resultado = Math.floor(Math.random() * 6) + 1;
+      dadoImg.src = imagenesDado[resultado-1];
+      document.getElementById('dado').innerText = `Has sacado un ${resultado}!`;
+       historial = document.getElementById('resultados');
+       li = document.createElement('li');
+      li.innerText = `Resultado: ${resultado}`;
+      historial.appendChild(li);
+    }
+    
+     botonLanzar = document.getElementById('lanzar');
+    botonLanzar.addEventListener('click', lanzarDado);
+    
+     botonHistorial = document.getElementById('historial');
+    botonHistorial.addEventListener('click', () => {
+       historial = document.getElementById('resultados');
+      historial.style.display = historial.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

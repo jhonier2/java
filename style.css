@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #b33951;
+  background: #A91AD0;
 }
 
 .container {
@@ -140,16 +140,32 @@ body {
 
 .roll {
   cursor: pointer;
-  color: #b33951;
+  color: #B91BEA;
   margin-top: 60px;
   padding: 6px 12px;
   border-radius: 3px;
   font: 700 16px 'Montserrat';
-  border: 2px solid #b33951;
+  border: 2px solid #B91BEA;
   transition: .4s;
 }
 
 .roll:hover {
   color: #fff;
-  background: #b33951;
+  background: #B91BEA;
+}
+
+.history {
+  cursor: pointer;
+  color: #B91BEA;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 3px;
+  font: 700 16px 'Montserrat';
+  border: 2px solid #B91BEA;
+  transition: .4s;
+}
+
+.history:hover {
+  color: #fff;
+  background: #B91BEA;
 }

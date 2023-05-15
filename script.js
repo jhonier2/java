@@ -2,7 +2,7 @@ const dice = document.querySelector('.dice');
 const rollBtn = document.querySelector('.roll');
 const historyBtn = document.querySelector('.history');
 const historyList = document.querySelector('.history-list');
-const historyArray = [];
+const historyArray = [];                                        
 
 historyBtn.addEventListener('click', function() {
   if (historyList.style.display === 'none') {
@@ -10,21 +10,15 @@ historyBtn.addEventListener('click', function() {
   } else {
     historyList.style.display = 'none';
   }
-});
+})
+ //PARTE DE EXPLICAR DE JHONIER----------------------------------------------------------------^
 
-
-const randomDice = () => {
-
-    const random = Math.floor(Math.random() * 10);
-
-    if (random >= 1 && random <= 6) {
-        rollDice(random);
-        historyArray.push(random);
-    }
-    else {
-        randomDice();
-    }
-}
+ const randomDice = () => {
+    const random = Math.floor(Math.random() * 6) + 1; // Generar un número aleatorio entre 1 y 6
+    rollDice(random);
+    historyArray.push(random);
+  }
+  
 
 const rollDice = random => {
 

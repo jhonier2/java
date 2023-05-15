@@ -1,5 +1,17 @@
 const dice = document.querySelector('.dice');
 const rollBtn = document.querySelector('.roll');
+const historyBtn = document.querySelector('.history');
+const historyList = document.querySelector('.history-list');
+const historyArray = [];
+
+historyBtn.addEventListener('click', function() {
+  if (historyList.style.display === 'none') {
+    historyList.style.display = 'block';
+  } else {
+    historyList.style.display = 'none';
+  }
+});
+
 
 const randomDice = () => {
 
@@ -7,6 +19,7 @@ const randomDice = () => {
 
     if (random >= 1 && random <= 6) {
         rollDice(random);
+        historyArray.push(random);
     }
     else {
         randomDice();
@@ -54,4 +67,15 @@ const rollDice = random => {
 
 }
 
+const showHistory = () => {
+    historyList.innerHTML = '';
+    historyArray.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `Tirada: ${item}`;
+        historyList.appendChild(listItem);
+    });
+}
+
 rollBtn.addEventListener('click', randomDice);
+historyBtn.addEventListener('click', showHistory);
+

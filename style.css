@@ -161,3 +161,10 @@ body {
   color: #fff;
   background: #1bb3ea;
 }
+
+ul{
+  margin: 3px;
+  list-style: none;
+  font: 700 16px 'Montserrat';
+
+}

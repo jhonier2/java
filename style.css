@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #A91AD0;
+  background: #1c7ab4ea;
 }
 
 .container {
@@ -132,37 +132,32 @@ body {
 
 .roll {
   cursor: pointer;
-  color: #B91BEA;
+  color: #3a3a3a;
   margin-top: 60px;
   padding: 6px 12px;
   border-radius: 3px;
   font: 700 16px 'Montserrat';
-  border: 2px solid #B91BEA;
+  border: 2px solid #371bea;
   transition: .4s;
 }
 
 .roll:hover {
   color: #fff;
-  background: #B91BEA;
+  background: #1bb3ea;
 }
 
 .history {
   cursor: pointer;
-  color: #B91BEA;
+  color: #3a3a3a;
   margin-top: 10px;
   padding: 6px 12px;
   border-radius: 3px;
   font: 700 16px 'Montserrat';
-  border: 2px solid #B91BEA;
+  border: 2px solid #371bea;
   transition: .4s;
 }
 
 .history:hover {
   color: #fff;
-  background: #B91BEA;
-}
-
-.imagen1{
-  position: absolute;
-  left: 5%;
+  background: #1bb3ea;
 }

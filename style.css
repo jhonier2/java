@@ -161,3 +161,8 @@ body {
   color: #fff;
   background: #B91BEA;
 }
+
+.imagen1{
+  position: absolute;
+  left: 5%;
+}

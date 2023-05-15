@@ -15,7 +15,7 @@ const randomDice = () => {
 
 const rollDice = random => {
 
-    dice.style.animation = 'rolling 4s';
+    dice.style.animation = 'rolling 3s';
 
     setTimeout(() => {
 

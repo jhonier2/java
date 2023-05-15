@@ -105,11 +105,7 @@ body {
 
 .back::after {
   margin: -35px 0 0 -30px;
-  box-shadow: 40px 0,
-              0 25px,
-              40px 25px,
-              0 50px,
-              40px 50px;
+  box-shadow: 40px 0, 0 25px, 40px 25px, 0 50px, 40px 50px;
 }
 
 .top::after {
@@ -119,10 +115,7 @@ body {
 
 .bottom::after {
   margin: -36px 0 0 -36px;
-  box-shadow: 26px 26px,
-              52px 52px,
-              52px 0,
-              0 52px;
+  box-shadow: 26px 26px, 52px 52px, 52px 0, 0 52px;
 }
 
 .right::after {
@@ -134,8 +127,7 @@ body {
 
 .left::after {
   margin: -35px 0 0 -35px;
-  box-shadow: 25px 25px,
-              50px 50px;
+  box-shadow: 25px 25px, 50px 50px;
 }
 
 .roll {

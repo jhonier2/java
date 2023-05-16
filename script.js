@@ -11,7 +11,7 @@ historyBtn.addEventListener('click', function() {
     historyList.style.display = 'none';
   }
 })
- //PARTE DE EXPLICAR DE JHONIER----------------------------------------------------------------^
+
 
  const randomDice = () => {
     const random = Math.floor(Math.random() * 6) + 1; // Generar un número aleatorio entre 1 y 6
@@ -22,7 +22,7 @@ historyBtn.addEventListener('click', function() {
 
 const rollDice = random => {
 
-    dice.style.animation = 'rolling 3s';
+    dice.style.animation = 'rolling 10s';
 
     setTimeout(() => {
 
